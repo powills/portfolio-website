@@ -3,9 +3,12 @@ Colours used:
 Background Color 1 & Text Color (White): #f8f4f2
 Background Color 2 & Text Color (Dark Blue): #2a2e3a
 Text Color dark BG (Light Blue): #84909c
-Text Colour Light BG (Black):
+Text Colour Light BG (Black):#000000
 Button Color (Bergundy): #562131
 */
+*{
+  box-sizing:border-box;
+}
 body {
   font-family:'Montserrat', Sans-serif;
   font-size: 16px;
@@ -43,7 +46,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #84909c;
+  color: #2a2e3a;
   text-decoration: underline;
 }
 a:active {
@@ -105,4 +108,91 @@ img {
   background-color:#562131;
   color: #f8f4f2;
   text-decoration:none;
+}
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin:25px 0;
+}
+
+#work.row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+.center {
+  text-align: center;
+}
+
+
+#hero {
+  background-color:#2a2e3a;
+  color:#f8f4f2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  }
+
+#hero h1{
+text-align: center;
+}
+
+header{
+  background-color:#2a2e3a;
+  text-align:center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 8px 0px rgba(28, 37, 64, 0.88);
+  position:fixed;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
+  color: #f8f4f2;
+  font-size: 2.20em;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight:400;
+  color:#f8f4f2;
+}
+
+nav > ul > li > a:hover {
+  color:#84909c;
+}
+
+nav > ul > li > a:active {
+  color:#84909c;
+  text-decoration: underline;
+}
+
+main{
+padding-top: 128px;
+}
+
+footer{
+  background-color:#84909c;
+  color:#f8f4f2;
+  text-align:center;
+  padding: 10px 0;
 }
