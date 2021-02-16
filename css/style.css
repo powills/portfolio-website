@@ -41,16 +41,16 @@ h4 {
 }
 
 a {
-  color: #2a2e3a;
+  color: #84909c;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a2e3a;
-  text-decoration: underline;
+  color:#f8f4f2;
+
 }
 a:active {
-  color:#562131;
+  color:#f8f4f2;
   text-decoration: underline;
 }
 
@@ -96,7 +96,7 @@ img {
 }
 
 .button.contact {
-  background-color:#2a2e3a;
+  background-color:#562131;
   color:#f8f4f2;
 }
 .button.contact:hover {
@@ -105,8 +105,8 @@ img {
   text-decoration:none;
 }
 .button.:active {
-  background-color:#562131;
-  color: #f8f4f2;
+  background-color:#f8f4f2;
+  color: ##84909c;
   text-decoration:none;
 }
 
@@ -128,7 +128,9 @@ img {
   text-align: center;
 }
 
-
+.buttoncenter {
+  text-align: center;
+}
 #hero {
   background-color:#2a2e3a;
   color:#f8f4f2;
@@ -190,9 +192,15 @@ main{
 padding-top: 128px;
 }
 
+
 footer{
-  background-color:#84909c;
+  background-color:#2a2e3a;
   color:#f8f4f2;
   text-align:center;
   padding: 10px 0;
+}
+
+.social {
+  display: inline-block;
+  padding: 20px 0;
 }
