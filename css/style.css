@@ -43,6 +43,9 @@ h4 {
 a {
   color: #84909c;
   text-decoration: none;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-delay: 0.2s;
 }
 a:hover,
 a:focus {
@@ -66,7 +69,9 @@ img {
   padding: 10px;
   border-radius: 5px;
   border-bottom: 2px solid;
-  transition: 0.2s opacity;
+  transition-duration: 0.4s;
+  transition-property: opacity;
+  transition-delay: 0.2s;
 }
 .button:hover {
   background-color:#84909c;
@@ -197,6 +202,7 @@ padding-top: 128px;
   margin: 30px 0;
 }
 
+
 footer{
   background-color:#2a2e3a;
   color:#f8f4f2;
@@ -207,4 +213,128 @@ footer{
 .social {
   display: inline-block;
   padding: 20px 0;
+}
+
+/* Medium Device */
+
+@media only screen and (min-width:640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top:4px;
+}
+
+main {
+  padding-top: 97px;
+}
+
+#about-page h3 {
+  margin-top:0;
+}
+
+.col-md-6 {
+  width:50%;
+}
+
+[class*="col-"] {
+  float:left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display:table;
+}
+
+.button-center {
+  text-align:unset;
+}
+
+} /* Med closed */
+
+/* Large Device */
+
+@media only screen and (min-width:1024px) {
+
+.col-lg-7 {
+  width:60%;
+  }
+
+.col-lg-5 {
+  width:40%;
+  }
+
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+} /* large closed */
+
+.cls-1 {
+  clip-path: url(#clip-Custom_Size_1);
+}
+
+.cls-2 {
+  fill: #562131;
+}
+
+.cls-3 {
+  fill: #3f3d56;
+}
+
+.cls-4 {
+  fill: #f8d4c7;
+}
+
+.cls-5 {
+  fill: #2f2e41;
+}
+
+.cls-6 {
+  opacity: 0.2;
+}
+
+.cls-7 {
+  fill: #f5eacb;
+}
+
+.cls-8 {
+  fill: #2a2e3a;
+}
+
+.cls-9 {
+  fill: #514f6a;
+}
+
+.cls-10 {
+  fill: #84909c;
+}
+
+.cls-11 {
+  fill: #fff;
+}
+
+#birds {
+  animation-duration: 30s;
+  animation-name:birds-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes birds-move {
+  from: {transform: translate(0,50px);}
+  to: {transform: translate(200px,50px);}
 }
