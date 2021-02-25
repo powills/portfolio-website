@@ -335,6 +335,10 @@ main {
 }
 
 @keyframes birds-move {
-  from: {transform: translate(0,50px);}
-  to: {transform: translate(200px,50px);}
+  from {transform: translate(100px,50px);}
+  to {transform: translate(0,50px);}
+}
+
+.girl-walking {
+  width: 100%;
 }
